@@ -7,7 +7,7 @@ export default function TechStack() {
         My Development Tech<span className="text-primary">.</span>Stack
       </h1>
 
-      <ul className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      <ul className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-5">
         {devData.skills.map((skills) => (
           <li key={skills.name} className="flex flex-col items-center">
             <img

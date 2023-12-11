@@ -24,8 +24,21 @@ import CabinQuest from "../assets/projects/CabinQuest.png";
 import EliasGloriousGoods from "../assets/projects/EliasGloriousGoods.png";
 import eatSplit from "../assets/projects/preview-eat-n-split.png";
 import gameHub from "../assets/projects/Cross-Course-Project.png";
-
 import lazySloth from "../assets/projects/lazy-sloth.png";
+
+// Case Studies
+import moodle from "../assets/case_studies/moodle_re_imagined.png";
+import water_wastage from "../assets/case_studies/water_wastage.png";
+
+// Hobbies
+import warhammer from "../assets/hobbies/warhammer.jpg";
+import books from "../assets/hobbies/books.webp";
+
+// Icons
+import {
+  faBookBookmark,
+  faPaintbrush,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const devData = {
   basics: {
@@ -280,6 +293,54 @@ export const devData = {
       summary: "",
       highlights: ["Won award at AIHacks 2016"],
       frameworks: ["REACT", "CSS"],
+    },
+  ],
+  case_studies: [
+    {
+      title: "Moodle Re-Imagined",
+      startDate: "2019-01-01",
+      endDate: "2021-01-01",
+      image: moodle,
+      website:
+        "https://www.behance.net/gallery/121114409/UX-Case-Study-Moodle-Re-Imagined",
+      summary:
+        "This case study will showcase how with the help of the Design Thinking Process, we were able to discover and identify user frustrations and goals with the current Moodle system, as well as how we believe our solution will help the current and next generation of students.",
+      highlights: ["Won award at AIHacks 2016"],
+      frameworks: ["REACT", "CSS"],
+    },
+    {
+      title: "Water Wastage",
+      startDate: "2019-01-01",
+      endDate: "2021-01-01",
+      image: water_wastage,
+      website:
+        "https://www.behance.net/gallery/121285305/UX-Case-Study-Water-Wastage",
+      summary:
+        "The aim of this study was to find out what drives us humans to consume and waste extreme amounts of the limited resource that keeps us alive, our water. With this mindset we needed to gain an empathetic understanding of how humans perceive water as a resource and a commodity in personal housing and the broader aspect of things such as food production, agriculture and retail distribution.",
+      highlights: ["Won award at AIHacks 2016"],
+      frameworks: ["REACT", "CSS"],
+    },
+  ],
+  hobbies: [
+    {
+      title: "Warhammer 40K - Miniatures",
+      buttonText: "MY ARMY",
+      buttonIcon: faPaintbrush,
+      image: warhammer,
+      website: "https://warhammer40000.com/",
+      summary:
+        "Warhammer 40,000 is a miniature wargame produced by Games Workshop. It is the most popular miniature wargame in the world, and is particularly popular in the United Kingdom. The first edition of the rulebook was published in September 1987, and the 10th and current edition was released in June 2023.",
+      highlights: ["Won award at AIHacks 2016"],
+    },
+    {
+      title: "Reading/Audio Books",
+      buttonText: "MY COLLECTION",
+      buttonIcon: faBookBookmark,
+      image: books,
+      website: "https://warhammer40000.com/",
+      summary:
+        "I am a vivid listener/reader of books. Once I have found a good book I am completely enthralled with I binge it for hours on end. Currently on the agenda is to consume the entire Warhammer 40K collection, but I also love informative books like Atomic Habits by James Clear.",
+      highlights: ["Won award at AIHacks 2016"],
     },
   ],
 };

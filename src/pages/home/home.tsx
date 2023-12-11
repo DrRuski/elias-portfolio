@@ -11,6 +11,7 @@ export default function Home() {
         <TechStack />
         <div className="text-background border-b-2"></div>
         <Portfolio />
+        <div className="text-background border-b-2"></div>
       </div>
     </section>
   );
