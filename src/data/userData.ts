@@ -29,7 +29,7 @@ import lazySloth from "../assets/projects/lazy-sloth.png";
 
 export const devData = {
   basics: {
-    name: "Elias Ekornås",
+    name: "Elias",
     label: "Frontend Developer",
     image: eliasImg,
     email: "elias.ekornas@gmail.com",

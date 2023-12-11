@@ -1,9 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 *,
 *:after,
 *:before {
   box-sizing: border-box;
+}
+
+
+
+@layer base {
+  html {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  :root {
+    --text: #ffffff;
+    --background: #151515;
+    --primary: #4ee1a0;
+    --secondary: #3c712c;
+    --accent: #54bd7a;
+    --divider: #242424;
+  }
+
+  .light {
+    --text: #000000;
+    --background: #ebebeb;
+    --primary: #1eb370;
+    --secondary: #9dd38d;
+    --accent: #42a968;
+    --divider: #242424;
+  }
+}
+
+.img-bg {
+  background: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, #242424 100%);
 }
