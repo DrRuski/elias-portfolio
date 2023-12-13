@@ -2,7 +2,7 @@ import { devData } from "../../data/userData";
 
 export default function Header() {
   return (
-    <header className="container mx-auto px-3 md:px-0 lg:mt-10 ">
+    <header className="container mx-auto px-3 md:px-0 lg:mt-10">
       <div className="flex items-center justify-between">
         <h1 className="text-4xl font-bold">
           elias<span className="text-primary">.</span>ekornås

@@ -9,9 +9,9 @@ export default function Portfolio() {
   return (
     <section className="flex flex-col gap-10">
       <div className="flex flex-col items-center gap-5">
-        <h1 className="text-5xl font-bold">
+        <h2 className="font-bold lg:text-4xl">
           Portfolio<span className="text-primary">.</span>Showcase
-        </h1>
+        </h2>
 
         <div className="flex gap-7">
           <button

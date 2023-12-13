@@ -14,7 +14,7 @@ export default function Introduction() {
 }
 
 function Description() {
-  function handleDownload(url: string) {
+  function handleDownload(url: any) {
     const aTag = document.createElement("a");
     aTag.href = url;
     aTag.setAttribute("download", url.split("/").pop());
@@ -25,7 +25,7 @@ function Description() {
   return (
     <div className="flex-1">
       <div className="flex max-w-[650px] flex-col items-start gap-5">
-        <h1 className="flex gap-4 text-5xl font-semibold">
+        <h1 className="flex gap-4 font-semibold lg:text-5xl">
           <span>Hello! 👋 My name is</span>
           <span className="border-primary border-b-4 pb-1">
             {devData.basics.name}.
@@ -66,7 +66,7 @@ function Image() {
   return (
     <div className="flex-1">
       <img
-        className="img-bg mx-auto h-[600px] w-[500px] object-cover"
+        className="img-bg mx-auto h-[600px] rounded-b object-cover"
         src={devData.basics.image}
         alt={devData.basics.name}
       />

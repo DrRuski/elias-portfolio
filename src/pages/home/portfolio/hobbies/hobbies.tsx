@@ -17,12 +17,6 @@ export default function Hobbies() {
           <div>
             <p>{hobby.summary}</p>
           </div>
-          {/* <div className="flex gap-10">
-            <p className="text-text hover:text-primary border-primary w-fit border-b-2 px-1 py-2 text-start font-semibold">
-              <FontAwesomeIcon icon={hobby.buttonIcon} />
-              <span className="ms-2">{hobby.buttonText}</span>
-            </p>
-          </div> */}
         </li>
       ))}
     </ul>

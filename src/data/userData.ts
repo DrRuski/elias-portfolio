@@ -33,12 +33,8 @@ import water_wastage from "../assets/case_studies/water_wastage.png";
 // Hobbies
 import warhammer from "../assets/hobbies/warhammer.jpg";
 import books from "../assets/hobbies/books.webp";
-
-// Icons
-import {
-  faBookBookmark,
-  faPaintbrush,
-} from "@fortawesome/free-solid-svg-icons";
+import music from "../assets/hobbies/music.jpg";
+import games from "../assets/hobbies/games.jpg";
 
 export const devData = {
   basics: {
@@ -324,8 +320,6 @@ export const devData = {
   hobbies: [
     {
       title: "Warhammer 40K - Miniatures",
-      buttonText: "MY ARMY",
-      buttonIcon: faPaintbrush,
       image: warhammer,
       website: "https://warhammer40000.com/",
       summary:
@@ -334,12 +328,26 @@ export const devData = {
     },
     {
       title: "Reading/Audio Books",
-      buttonText: "MY COLLECTION",
-      buttonIcon: faBookBookmark,
       image: books,
       website: "https://warhammer40000.com/",
       summary:
         "I am a vivid listener/reader of books. Once I have found a good book I am completely enthralled with I binge it for hours on end. Currently on the agenda is to consume the entire Warhammer 40K collection, but I also love informative books like Atomic Habits by James Clear.",
+      highlights: ["Won award at AIHacks 2016"],
+    },
+    {
+      title: "Music",
+      image: music,
+      website: "https://warhammer40000.com/",
+      summary:
+        "Where code is my Ying, music would be my Yang, and one cannot exists without the other. When ever i find myself writing code I turn on my favorite playlist and listen to the jams, I am fortunate enough to be an eclectic music listener so most of the genres that i listen to are based on a day to day state.",
+      highlights: ["Won award at AIHacks 2016"],
+    },
+    {
+      title: "Gaming",
+      image: games,
+      website: "https://warhammer40000.com/",
+      summary:
+        "In the olden day I used to be a vivid gamer. Nowadays I find myself relaxing with code/music or a book, nonetheless I still game quite a bit when ever i find the time, either some RTS action, or your usual FPS.",
       highlights: ["Won award at AIHacks 2016"],
     },
   ],
