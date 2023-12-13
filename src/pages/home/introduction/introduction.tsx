@@ -51,7 +51,7 @@ function Description() {
           </button>
           <a
             className="text-text hover:text-primary border-primary w-fit border-b-2 px-1 py-2 text-start font-semibold"
-            href="#"
+            href="#contactForm"
           >
             <FontAwesomeIcon icon={faMessage} />
             <span className="ms-2">CONTACT ME</span>

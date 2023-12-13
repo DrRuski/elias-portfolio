@@ -3,33 +3,31 @@ import Form from "../../../components/form/form";
 export default function Contact() {
   return (
     <section className="flex flex-col lg:flex-row lg:gap-[50px]">
-      <div className="flex flex-1 items-center">
-        <div className="flex">
-          <h4 className="text-primary rotate-180 font-bold opacity-5 lg:text-8xl lg:[writing-mode:vertical-lr]">
-            LET'S TALK
-          </h4>
-          <h4 className="text-primary rotate-180 font-bold opacity-10 lg:text-8xl lg:[writing-mode:vertical-lr]">
-            LET'S TALK
-          </h4>
-          <h4 className="text-primary rotate-180 font-bold opacity-20 lg:text-8xl lg:[writing-mode:vertical-lr]">
-            LET'S TALK
-          </h4>
-          <h4 className="text-primary rotate-180 font-bold opacity-25 lg:text-8xl lg:[writing-mode:vertical-lr]">
-            LET'S TALK
-          </h4>
-          <h4 className="text-primary rotate-180 font-bold opacity-40 lg:text-8xl lg:[writing-mode:vertical-lr]">
-            LET'S TALK
-          </h4>
-          <h4 className="text-primary rotate-180 font-bold opacity-60 lg:text-8xl lg:[writing-mode:vertical-lr]">
-            LET'S TALK
-          </h4>
-          <h4 className="text-primary rotate-180 font-bold opacity-80 lg:text-8xl lg:[writing-mode:vertical-lr]">
-            LET'S TALK
-          </h4>
-          <h4 className="text-primary rotate-180 font-bold opacity-100 lg:text-8xl lg:[writing-mode:vertical-lr]">
-            LET'S TALK
-          </h4>
-        </div>
+      <div className="flex flex-1 flex-col items-center lg:flex-row">
+        <h4 className="text-primary font-bold opacity-5 lg:rotate-180 lg:text-8xl lg:[writing-mode:vertical-lr]">
+          LET'S TALK
+        </h4>
+        <h4 className="text-primary font-bold opacity-10 lg:rotate-180 lg:text-8xl lg:[writing-mode:vertical-lr]">
+          LET'S TALK
+        </h4>
+        <h4 className="text-primary font-bold opacity-20 lg:rotate-180 lg:text-8xl lg:[writing-mode:vertical-lr]">
+          LET'S TALK
+        </h4>
+        <h4 className="text-primary font-bold opacity-25 lg:rotate-180 lg:text-8xl lg:[writing-mode:vertical-lr]">
+          LET'S TALK
+        </h4>
+        <h4 className="text-primary font-bold opacity-40 lg:rotate-180 lg:text-8xl lg:[writing-mode:vertical-lr]">
+          LET'S TALK
+        </h4>
+        <h4 className="text-primary font-bold opacity-60 lg:rotate-180 lg:text-8xl lg:[writing-mode:vertical-lr]">
+          LET'S TALK
+        </h4>
+        <h4 className="text-primary font-bold opacity-80 lg:rotate-180 lg:text-8xl lg:[writing-mode:vertical-lr]">
+          LET'S TALK
+        </h4>
+        <h4 className="text-primary font-bold opacity-100 lg:rotate-180 lg:text-8xl lg:[writing-mode:vertical-lr]">
+          LET'S TALK
+        </h4>
       </div>
 
       <div className="flex flex-1 flex-col justify-between gap-5">
