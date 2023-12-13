@@ -1,12 +1,12 @@
 import { devData } from "../../data/userData";
-import Contact from "../../pages/home/contact/contact";
+import ContactForm from "../../pages/home/contact/contact";
 
 export default function Footer() {
   return (
     <footer className="bg-divider">
       <div className="container mx-auto px-3 md:px-0 lg:mb-10 lg:mt-[55px]">
         <div className="flex flex-col gap-[75px]">
-          <Contact />
+          <ContactForm />
 
           <div className="flex items-center justify-between">
             <SocialProfile />
