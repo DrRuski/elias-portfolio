@@ -7,9 +7,8 @@ export default function Home() {
     <section className="container mx-auto px-3 md:px-0">
       <div className="flex flex-col gap-[75px]">
         <Introduction />
-        <div className="text-divider border-b-2"></div>
+        <div className="border-b-2 text-divider"></div>
         <TechStack />
-        <div className="text-background border-b-2"></div>
         <Portfolio />
       </div>
     </section>

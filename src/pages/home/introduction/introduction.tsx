@@ -24,17 +24,19 @@ function Description() {
   }
   return (
     <div className="flex-1">
-      <div className="flex max-w-[650px] flex-col items-start gap-5">
-        <h1 className="flex gap-4 font-semibold lg:text-5xl">
+      <div className="flex max-w-[650px] flex-col items-center gap-5  lg:items-start">
+        <h1 className="flex gap-4 text-2xl font-semibold lg:text-5xl">
           <span>Hello! 👋 My name is</span>
-          <span className="border-primary border-b-4 pb-1">
+          <span className="border-b-2 border-primary lg:border-b-4 lg:pb-1">
             {devData.basics.name}.
           </span>
         </h1>
-        <p className="text-lg">{devData.basics.summary}</p>
-        <div className="flex flex-col gap-5">
+        <p className="text-center text-base lg:text-start lg:text-lg">
+          {devData.basics.summary}
+        </p>
+        <div className="flex flex-col items-center gap-5 lg:items-start">
           <button
-            className="text-text hover:text-primary border-primary w-fit border-b-2 px-1 py-2 text-start font-semibold"
+            className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"
             type="button"
             onClick={() => handleDownload(resumeNOK)}
           >
@@ -42,7 +44,7 @@ function Description() {
             <span className="ms-2">DOWNLOAD CV - NOK</span>
           </button>
           <button
-            className="text-text hover:text-primary border-primary w-fit border-b-2 px-1 py-2 text-start font-semibold"
+            className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"
             type="button"
             onClick={() => handleDownload(resumeENG)}
           >
@@ -50,7 +52,7 @@ function Description() {
             <span className="ms-2">DOWNLOAD CV - ENG</span>
           </button>
           <a
-            className="text-text hover:text-primary border-primary w-fit border-b-2 px-1 py-2 text-start font-semibold"
+            className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"
             href="#contactForm"
           >
             <FontAwesomeIcon icon={faMessage} />

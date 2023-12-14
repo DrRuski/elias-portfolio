@@ -58,14 +58,14 @@ export default function ContactForm() {
   return (
     <form
       id="contactForm"
-      className="flex h-full flex-col justify-between"
+      className="flex h-full flex-col gap-10 lg:justify-between"
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="flex flex-col">
         <label htmlFor="fullName">Full Name</label>
         <input
           id="fullName"
-          className="bg-divider border-text border-b-2 p-2 outline-none"
+          className="border-b-[1px] border-text bg-divider p-2 outline-none lg:border-b-2"
           {...register("fullName", { required: true, maxLength: 20 })}
         />
         {errors.fullName && (
@@ -77,7 +77,7 @@ export default function ContactForm() {
         <label htmlFor="email">Email</label>
         <input
           id="email"
-          className="bg-divider border-text border-b-2 p-2 outline-none"
+          className="border-b-[1px] border-text bg-divider p-2 outline-none lg:border-b-2"
           {...register("email", {
             required: true,
             pattern: /^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
@@ -93,7 +93,7 @@ export default function ContactForm() {
         <textarea
           id="message"
           rows={3}
-          className="bg-divider border-text border-b-2 p-2 outline-none"
+          className="border-b-[1px] border-text bg-divider p-2 outline-none lg:border-b-2"
           {...register("message", { required: true, min: 3, max: 99 })}
         />
         {errors.message && (
@@ -101,7 +101,7 @@ export default function ContactForm() {
         )}
       </div>
 
-      <div className="hover:text-primary border-primary w-fit cursor-pointer self-end border-b-2 px-1 py-2 text-start font-semibold">
+      <div className="w-fit cursor-pointer self-end border-b-2 border-primary px-1 py-2 text-start font-semibold hover:text-primary">
         <FontAwesomeIcon icon={faMessage} />
         <input
           className="ms-2 cursor-pointer"

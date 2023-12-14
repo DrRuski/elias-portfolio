@@ -2,9 +2,9 @@ import { devData } from "../../data/userData";
 
 export default function Header() {
   return (
-    <header className="container mx-auto px-3 md:px-0 lg:mt-10">
-      <div className="flex items-center justify-between">
-        <h1 className="text-4xl font-bold">
+    <header className="container mx-auto mt-4 px-3 md:px-0 lg:mt-10">
+      <div className="flex flex-col items-center gap-5 lg:flex-row lg:justify-between">
+        <h1 className="text-2xl font-bold lg:text-4xl">
           elias<span className="text-primary">.</span>ekornås
         </h1>
         <SocialProfile />

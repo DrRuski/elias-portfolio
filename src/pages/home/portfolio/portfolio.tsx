@@ -9,7 +9,7 @@ export default function Portfolio() {
   return (
     <section className="flex flex-col gap-10">
       <div className="flex flex-col items-center gap-5">
-        <h2 className="font-bold lg:text-4xl">
+        <h2 className="text-2xl font-bold lg:text-4xl">
           Portfolio<span className="text-primary">.</span>Showcase
         </h2>
 
@@ -17,8 +17,10 @@ export default function Portfolio() {
           <button
             onClick={() => setActive(0)}
             type="button"
-            className={`border-divider rounded border px-3 py-2 shadow-lg ${
-              isActive === 0 ? "shadow-accent" : "shadow-divider"
+            className={`rounded border border-divider p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
+              isActive === 0
+                ? "border border-accent shadow-accent"
+                : "border border-divider shadow-divider"
             }`}
           >
             Websites
@@ -26,8 +28,10 @@ export default function Portfolio() {
           <button
             onClick={() => setActive(1)}
             type="button"
-            className={`border-divider rounded border px-3 py-2 shadow-lg ${
-              isActive === 1 ? "shadow-accent" : "shadow-divider"
+            className={`rounded border border-divider p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
+              isActive === 1
+                ? "border border-accent shadow-accent"
+                : "border border-divider shadow-divider"
             }`}
           >
             Case Studies
@@ -35,8 +39,10 @@ export default function Portfolio() {
           <button
             onClick={() => setActive(2)}
             type="button"
-            className={`border-divider rounded border px-3 py-2 shadow-lg ${
-              isActive === 2 ? "shadow-accent" : "shadow-divider"
+            className={`rounded border border-divider p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
+              isActive === 2
+                ? "border border-accent shadow-accent"
+                : "border border-divider shadow-divider"
             }`}
           >
             Hobbies

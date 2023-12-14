@@ -29,6 +29,7 @@ import lazySloth from "../assets/projects/lazy-sloth.png";
 // Case Studies
 import moodle from "../assets/case_studies/moodle_re_imagined.png";
 import water_wastage from "../assets/case_studies/water_wastage.png";
+import dynamoDB from "../assets/case_studies/DynamoDB.jpg";
 
 // Hobbies
 import warhammer from "../assets/hobbies/warhammer.jpg";
@@ -292,6 +293,17 @@ export const devData = {
     },
   ],
   case_studies: [
+    {
+      title: "AWS DynamoDB",
+      startDate: "2019-01-01",
+      endDate: "2021-01-01",
+      image: dynamoDB,
+      website: "https://library.noroff.dev/databases/aws-dynamodb-case-study/",
+      summary:
+        "AWS DynamoDB is a managed Non-Relational Database (NoSQL) service provided by Amazon Web Services (AWS). It was designed to offer a highly scalable, fully managed, and low-latency database solution for developers and businesses needing to handle large amounts of data and high traffic loads.",
+      highlights: ["Won award at AIHacks 2016"],
+      frameworks: ["REACT", "CSS"],
+    },
     {
       title: "Moodle Re-Imagined",
       startDate: "2019-01-01",

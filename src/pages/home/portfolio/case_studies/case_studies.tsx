@@ -7,7 +7,7 @@ export default function CaseStudies() {
     <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
       {devData.case_studies.map((report) => (
         <li
-          className="border-divider flex flex-col gap-5 rounded border p-5"
+          className="flex flex-col gap-5 rounded border border-divider p-5"
           key={report.title}
         >
           <img
@@ -21,11 +21,11 @@ export default function CaseStudies() {
           </div>
           <div className="flex gap-10">
             <a
-              className="text-text hover:text-primary border-primary w-fit border-b-2 px-1 py-2 text-start font-semibold"
+              className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"
               href={report.website}
             >
               <FontAwesomeIcon icon={faBookOpen} />
-              <span className="ms-2">READ STUDY</span>
+              <span className="ms-2 text-sm lg:text-base">READ STUDY</span>
             </a>
           </div>
         </li>

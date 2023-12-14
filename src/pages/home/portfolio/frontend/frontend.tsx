@@ -8,7 +8,7 @@ export default function Frontend() {
     <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
       {devData.projects.map((project) => (
         <li
-          className="border-divider flex flex-col gap-5 rounded border p-5"
+          className="flex flex-col gap-5 rounded border border-divider p-2 lg:p-5"
           key={project.title}
         >
           <img
@@ -16,11 +16,11 @@ export default function Frontend() {
             src={project.image}
             alt={project.title}
           />
-          <div className="flex items-center justify-between">
-            <h4 className="text-2xl font-medium">{project.title}</h4>
-            <div className="flex items-center gap-5">
+          <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between">
+            <h4 className="text-xl font-medium lg:text-2xl">{project.title}</h4>
+            <div className="flex flex-wrap items-center gap-2 lg:gap-5">
               {project.frameworks.map((skill) => (
-                <p className="text-sm" key={skill}>
+                <p className="text-xs lg:text-sm" key={skill}>
                   {skill}
                 </p>
               ))}
@@ -29,18 +29,18 @@ export default function Frontend() {
 
           <div className="flex gap-10">
             <a
-              className="text-text hover:text-primary border-primary w-fit border-b-2 px-1 py-2 text-start font-semibold"
+              className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"
               href={project.website}
             >
               <FontAwesomeIcon icon={faTabletScreenButton} />
-              <span className="ms-2">LIVE DEMO</span>
+              <span className="ms-2 text-sm lg:text-base">LIVE DEMO</span>
             </a>
             <a
-              className="text-text hover:text-primary border-primary w-fit border-b-2 px-1 py-2 text-start font-semibold"
+              className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"
               href={project.code}
             >
               <FontAwesomeIcon icon={faGithub} />
-              <span className="ms-2">REPOSITORY</span>
+              <span className="ms-2 text-sm lg:text-base">REPOSITORY</span>
             </a>
           </div>
         </li>
