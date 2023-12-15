@@ -34,6 +34,7 @@ function Description() {
         <p className="text-center text-base lg:text-start lg:text-lg">
           {devData.basics.summary}
         </p>
+
         <div className="flex flex-col items-center gap-5 lg:items-start">
           <button
             className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"

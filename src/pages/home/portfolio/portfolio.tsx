@@ -17,10 +17,10 @@ export default function Portfolio() {
           <button
             onClick={() => setActive(0)}
             type="button"
-            className={`rounded border border-divider p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
+            className={`rounded border p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
               isActive === 0
-                ? "border border-accent shadow-accent"
-                : "border border-divider shadow-divider"
+                ? "border-accent shadow-accent"
+                : "border-divider shadow-divider"
             }`}
           >
             Websites
@@ -28,10 +28,10 @@ export default function Portfolio() {
           <button
             onClick={() => setActive(1)}
             type="button"
-            className={`rounded border border-divider p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
+            className={`rounded border p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
               isActive === 1
-                ? "border border-accent shadow-accent"
-                : "border border-divider shadow-divider"
+                ? "border-accent shadow-accent"
+                : "border-divider shadow-divider"
             }`}
           >
             Case Studies
@@ -39,10 +39,10 @@ export default function Portfolio() {
           <button
             onClick={() => setActive(2)}
             type="button"
-            className={`rounded border border-divider p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
+            className={`rounded border p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
               isActive === 2
-                ? "border border-accent shadow-accent"
-                : "border border-divider shadow-divider"
+                ? "border-accent shadow-accent"
+                : "border-divider shadow-divider"
             }`}
           >
             Hobbies
