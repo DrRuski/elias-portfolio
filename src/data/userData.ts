@@ -22,7 +22,6 @@ import tailwind from "../assets/icons/tailwind.svg";
 // Developer Projects
 import CabinQuest from "../assets/projects/CabinQuest.png";
 import EliasGloriousGoods from "../assets/projects/EliasGloriousGoods.png";
-import eatSplit from "../assets/projects/preview-eat-n-split.png";
 import gameHub from "../assets/projects/Cross-Course-Project.png";
 import lazySloth from "../assets/projects/lazy-sloth.png";
 
@@ -30,6 +29,10 @@ import lazySloth from "../assets/projects/lazy-sloth.png";
 import moodle from "../assets/case_studies/moodle_re_imagined.png";
 import water_wastage from "../assets/case_studies/water_wastage.png";
 import dynamoDB from "../assets/case_studies/DynamoDB.jpg";
+
+// Miscellaneous
+import eatSplit from "../assets/miscellaneous/preview-eat-n-split.png";
+import usePopcorn from "../assets/miscellaneous/selectedMovie.png";
 
 // Hobbies
 import warhammer from "../assets/hobbies/warhammer.jpg";
@@ -281,17 +284,6 @@ export const devData = {
       highlights: ["Won award at AIHacks 2016"],
       frameworks: ["HTML", "SASS", "JS"],
     },
-    {
-      title: "EAT'N'SPLIT",
-      startDate: "2019-01-01",
-      endDate: "2021-01-01",
-      image: eatSplit,
-      website: "https://tangerine-genie-e307db.netlify.app",
-      code: "https://github.com/DrRuski/eat-n-split",
-      summary: "",
-      highlights: ["Won award at AIHacks 2016"],
-      frameworks: ["REACT", "CSS"],
-    },
   ],
   case_studies: [
     {
@@ -330,6 +322,34 @@ export const devData = {
       frameworks: ["REACT", "CSS"],
     },
   ],
+
+  miscellaneous: [
+    {
+      title: "UsePopcorn",
+      startDate: "2019-01-01",
+      endDate: "2021-01-01",
+      image: usePopcorn,
+      website: "https://tangerine-genie-e307db.netlify.app",
+      code: "https://github.com/DrRuski/Movie-Search-Database",
+      summary:
+        "This project was made in accordance with the The Ultimate React Course 2024: React, Redux & More by Jonas Schmedtmann course on udemy.com.",
+      highlights: ["Won award at AIHacks 2016"],
+      frameworks: ["REACT", "CSS"],
+    },
+    {
+      title: "EAT'N'SPLIT",
+      startDate: "2019-01-01",
+      endDate: "2021-01-01",
+      image: eatSplit,
+      website: "https://tangerine-genie-e307db.netlify.app",
+      code: "https://github.com/DrRuski/eat-n-split",
+      summary:
+        "This project was made in accordance with the The Ultimate React Course 2024: React, Redux & More by Jonas Schmedtmann course on udemy.com.",
+      highlights: ["Won award at AIHacks 2016"],
+      frameworks: ["REACT", "CSS"],
+    },
+  ],
+
   hobbies: [
     {
       title: "Warhammer 40K - Miniatures",

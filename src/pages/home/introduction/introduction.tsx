@@ -14,10 +14,10 @@ export default function Introduction() {
 }
 
 function Description() {
-  function handleDownload(url: any) {
+  function handleDownload(url: string) {
     const aTag = document.createElement("a");
     aTag.href = url;
-    aTag.setAttribute("download", url.split("/").pop());
+    aTag.setAttribute("download", url.split("/").pop() as string);
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
