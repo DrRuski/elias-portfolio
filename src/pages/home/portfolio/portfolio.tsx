@@ -2,6 +2,7 @@ import { useState } from "react";
 import Frontend from "./frontend/frontend";
 import CaseStudies from "./case_studies/case_studies";
 import Hobbies from "./hobbies/hobbies";
+import Miscellaneous from "./miscellaneous/miscellaneous";
 
 export default function Portfolio() {
   const [isActive, setActive] = useState(0);
@@ -45,6 +46,17 @@ export default function Portfolio() {
                 : "border-divider shadow-divider"
             }`}
           >
+            Miscellaneous
+          </button>
+          <button
+            onClick={() => setActive(3)}
+            type="button"
+            className={`rounded border p-2 text-sm shadow-lg lg:px-3 lg:py-2 lg:text-base ${
+              isActive === 3
+                ? "border-accent shadow-accent"
+                : "border-divider shadow-divider"
+            }`}
+          >
             Hobbies
           </button>
         </div>
@@ -61,6 +73,11 @@ export default function Portfolio() {
         </div>
       )}
       {isActive === 2 && (
+        <div>
+          <Miscellaneous />
+        </div>
+      )}
+      {isActive === 3 && (
         <div>
           <Hobbies />
         </div>

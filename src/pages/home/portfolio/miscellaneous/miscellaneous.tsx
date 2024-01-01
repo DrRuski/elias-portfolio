@@ -1,0 +1,45 @@
+import { devData } from "../../../../data/userData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
+export default function Miscellaneous() {
+  return (
+    <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
+      {devData.miscellaneous.map((project) => (
+        <li
+          className="flex flex-col gap-5 rounded border border-divider p-2 lg:p-5"
+          key={project.title}
+        >
+          <img
+            className="h-full rounded object-cover"
+            src={project.image}
+            alt={project.title}
+          />
+          <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between">
+            <h4 className="text-xl font-medium lg:text-2xl">{project.title}</h4>
+
+            <div className="flex flex-wrap items-center gap-2 lg:gap-5">
+              {project.frameworks.map((skill) => (
+                <p className="text-xs lg:text-sm" key={skill}>
+                  {skill}
+                </p>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p>{project.summary}</p>
+          </div>
+          <div className="flex gap-10">
+            <a
+              className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"
+              href={project.code}
+            >
+              <FontAwesomeIcon icon={faGithub} />
+              <span className="ms-2 text-sm lg:text-base">REPOSITORY</span>
+            </a>
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+}
