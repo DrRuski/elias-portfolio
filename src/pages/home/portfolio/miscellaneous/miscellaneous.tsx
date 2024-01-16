@@ -20,9 +20,7 @@ export default function Miscellaneous() {
 
             <div className="flex flex-wrap items-center gap-2 lg:gap-5">
               {project.frameworks.map((skill) => (
-                <p className="text-xs lg:text-sm" key={skill}>
-                  {skill}
-                </p>
+                <img key={skill} src={skill} className="w-10 object-cover" />
               ))}
             </div>
           </div>

@@ -33,6 +33,8 @@ import dynamoDB from "../assets/case_studies/DynamoDB.jpg";
 // Miscellaneous
 import eatSplit from "../assets/miscellaneous/preview-eat-n-split.png";
 import usePopcorn from "../assets/miscellaneous/selectedMovie.png";
+import reactQuiz from "../assets/miscellaneous/reactQuiz.jpg";
+import worldWise from "../assets/miscellaneous/worldWise.jpg";
 
 // Hobbies
 import warhammer from "../assets/hobbies/warhammer.jpg";
@@ -331,6 +333,18 @@ export const devData = {
 
   miscellaneous: [
     {
+      title: "WorldWise",
+      startDate: "2019-01-01",
+      endDate: "2021-01-01",
+      image: worldWise,
+      website: "https://tangerine-genie-e307db.netlify.app",
+      code: "https://github.com/DrRuski/WorldWise",
+      summary:
+        "This project was made in accordance with the The Ultimate React Course 2024: React, Redux & More by Jonas Schmedtmann course on udemy.com.",
+      highlights: ["Won award at AIHacks 2016"],
+      frameworks: [react, css],
+    },
+    {
       title: "UsePopcorn",
       startDate: "2019-01-01",
       endDate: "2021-01-01",
@@ -340,7 +354,19 @@ export const devData = {
       summary:
         "This project was made in accordance with the The Ultimate React Course 2024: React, Redux & More by Jonas Schmedtmann course on udemy.com.",
       highlights: ["Won award at AIHacks 2016"],
-      frameworks: ["REACT", "CSS"],
+      frameworks: [react, css],
+    },
+    {
+      title: "React Quiz App",
+      startDate: "2019-01-01",
+      endDate: "2021-01-01",
+      image: reactQuiz,
+      website: "https://tangerine-genie-e307db.netlify.app",
+      code: "https://github.com/DrRuski/React-Quiz-App",
+      summary:
+        "This project was made in accordance with the The Ultimate React Course 2024: React, Redux & More by Jonas Schmedtmann course on udemy.com.",
+      highlights: ["Won award at AIHacks 2016"],
+      frameworks: [react, css],
     },
     {
       title: "EAT'N'SPLIT",
@@ -352,7 +378,7 @@ export const devData = {
       summary:
         "This project was made in accordance with the The Ultimate React Course 2024: React, Redux & More by Jonas Schmedtmann course on udemy.com.",
       highlights: ["Won award at AIHacks 2016"],
-      frameworks: ["REACT", "CSS"],
+      frameworks: [react, css],
     },
   ],
 
