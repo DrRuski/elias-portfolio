@@ -20,9 +20,7 @@ export default function Frontend() {
             <h4 className="text-xl font-medium lg:text-2xl">{project.title}</h4>
             <div className="flex flex-wrap items-center gap-2 lg:gap-5">
               {project.frameworks.map((skill) => (
-                <p className="text-xs lg:text-sm" key={skill}>
-                  {skill}
-                </p>
+                <img key={skill} src={skill} className="w-10 object-cover" />
               ))}
             </div>
           </div>

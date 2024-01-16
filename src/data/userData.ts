@@ -246,9 +246,11 @@ export const devData = {
       image: CabinQuest,
       website: "https://cabinquest.no/",
       code: "https://github.com/DrRuski/CabinQuest",
-      summary: "",
+      summary:
+        "This is my final examination project submission for the Frontend Development course at Noroff School of technology and digital media.",
       highlights: ["Won award at AIHacks 2016"],
-      frameworks: ["REACT", "TAILWIND", "JS"],
+      frameworks: [react, tailwind, js],
+      // frameworks: ["REACT", "TAILWIND", "JS"],
     },
     {
       title: "Elias` Glorious Goods.",
@@ -257,9 +259,11 @@ export const devData = {
       image: EliasGloriousGoods,
       website: "https://jade-paprenjak-6721a7.netlify.app/",
       code: "https://github.com/DrRuski/js-frameworks-ca",
-      summary: "",
+      summary:
+        "This is my javascript frameworks introductory course assignment project submission for the Frontend Development course at Noroff School of technology and digital media.",
       highlights: ["Won award at AIHacks 2016"],
-      frameworks: ["REACT", "TAILWIND", "JS"],
+      frameworks: [react, tailwind, js],
+      // frameworks: ["REACT", "TAILWIND", "JS"],
     },
     {
       title: "GAME HUB - E-COMMERCE",
@@ -271,7 +275,8 @@ export const devData = {
       summary:
         "This cross-course project has been designed, developed and improved throughout my studies @Noroff. The development of the project started when I enrolled into the school and with each passing course, the website was built upon and improved into what you see today (EU - 08.12.22 | US - 12.08.22). In general, the website incorporates real-world project development processes that are focused on research-based and user-centric design and development methodologies.",
       highlights: ["Won award at AIHacks 2016"],
-      frameworks: ["HTML", "CSS", "JS", "WooCommerce"],
+      frameworks: [html, css, js],
+      // frameworks: ["HTML", "CSS", "JS", "WooCommerce"],
     },
     {
       title: "LAZY SLOTH - AUCTION HOUSE",
@@ -282,7 +287,8 @@ export const devData = {
       code: "https://github.com/DrRuski/noroff-auction-house",
       summary: "",
       highlights: ["Won award at AIHacks 2016"],
-      frameworks: ["HTML", "SASS", "JS"],
+      frameworks: [html, sass, js],
+      // frameworks: ["HTML", "SASS", "JS"],
     },
   ],
   case_studies: [
