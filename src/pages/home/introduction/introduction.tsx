@@ -1,8 +1,9 @@
 import { devData } from "../../../data/userData";
-import resumeNOK from "../../../assets/cv/CV-nok.pdf";
-import resumeENG from "../../../assets/cv/CV-eng.pdf";
+// import resumeNOK from "../../../assets/cv/CV-nok.pdf";
+// import resumeENG from "../../../assets/cv/CV-eng.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFile, faMessage } from "@fortawesome/free-regular-svg-icons";
+import { faMessage } from "@fortawesome/free-regular-svg-icons";
+// import { faFile } from "@fortawesome/free-regular-svg-icons";
 
 export default function Introduction() {
   return (
@@ -14,14 +15,14 @@ export default function Introduction() {
 }
 
 function Description() {
-  function handleDownload(url: string) {
-    const aTag = document.createElement("a");
-    aTag.href = url;
-    aTag.setAttribute("download", url.split("/").pop() as string);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
-  }
+  // function handleDownload(url: string) {
+  //   const aTag = document.createElement("a");
+  //   aTag.href = url;
+  //   aTag.setAttribute("download", url.split("/").pop() as string);
+  //   document.body.appendChild(aTag);
+  //   aTag.click();
+  //   aTag.remove();
+  // }
   return (
     <div className="flex-1">
       <div className="flex max-w-[650px] flex-col items-center gap-5  lg:items-start">
@@ -36,7 +37,7 @@ function Description() {
         </p>
 
         <div className="flex flex-col items-center gap-5 lg:items-start">
-          <button
+          {/* <button
             className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"
             type="button"
             onClick={() => handleDownload(resumeNOK)}
@@ -51,7 +52,7 @@ function Description() {
           >
             <FontAwesomeIcon icon={faFile} />
             <span className="ms-2">DOWNLOAD CV - ENG</span>
-          </button>
+          </button> */}
           <a
             className="w-fit border-b-2 border-primary px-1 py-2 text-start font-semibold text-text hover:text-primary"
             href="#contactForm"
